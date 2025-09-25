@@ -1,67 +1,65 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     color: #fff;
+    padding: 20px 0;
 }
 
 .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.95); /* slightly transparent card */
+    background: rgba(255, 255, 255, 0.95);
     color: #333;
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 90%;
+    max-width: 800px;
+    width: 95%;
 }
 
 h1 {
-    margin-bottom: 25px;
-    color: #222;
+    margin-bottom: 10px;
 }
 
-.converter {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-input, select, button {
+input {
     padding: 12px;
     font-size: 16px;
     border-radius: 8px;
     border: 1px solid #ccc;
     outline: none;
+    width: 200px;
+    margin-bottom: 20px;
 }
 
-input:focus, select:focus {
+input:focus {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0,123,255,0.5);
 }
 
-button {
+#currencies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    text-align: left;
+}
+
+.currency {
     background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
-button:hover {
-    background: #0056b3;
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #007bff;
+.currency strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 footer {
