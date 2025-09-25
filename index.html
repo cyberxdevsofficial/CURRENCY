@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuga Senithu Currency Converter</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuga Senithu Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Anuga Senithu Currency Converter</h1>
-        <p>All currency rates relative to USD</p>
-        <input type="number" id="amount" placeholder="Enter amount" value="1">
-        <div id="currencies"></div>
+  <div class="container">
+    <h1>Anuga Senithu Currency Converter</h1>
+    <p>All currency rates relative to USD</p>
+    <input type="number" id="amount" placeholder="Enter amount" value="1">
+    <div class="table-container">
+      <table id="currencyTable">
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Rate (USD Base)</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
+  </div>
 
-    <footer>© 2023-2025 | POWERED BY ANUGA SENITHU.</footer>
+  <footer>© 2023-2025 | POWERED BY ANUGA SENITHU.</footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
